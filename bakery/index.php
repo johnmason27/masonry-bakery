@@ -16,7 +16,6 @@
             <a class="nav-home-link" href="./index.php">
                 <h1>O</h1>
             </a>
-
             <section class="nav-links">
                 <ul>
                     <li>
@@ -33,7 +32,6 @@
                     </li>
                 </ul>
             </section>
-
             <section class="nav-actions">
                 <a class="nav-action-link" href="#">
                     <img src="./icons/basket.svg" alt="Basket"/>
@@ -51,7 +49,9 @@
             <p>THE HOME OF FRESH BAKING</p>
         </div>
     </div>
+
     <div class="divider"></div>
+    
     <div class="home-background-info">
         <div class="home-background-info-content">
             <img src="./media/employee-working.png" alt="Employee working"/>
@@ -65,7 +65,9 @@
             </div>
         </div>
     </div>
+
     <div class="divider"></div>
+    
     <div class="have-a-nosey-container">
         <a href="#">
             <button class="have-a-nosey-button">
@@ -73,6 +75,7 @@
             </button>
         </a>
     </div>
+    
     <div class="centre">
         <div class="social-image-gallery">
             <section class="social-caption-group">
@@ -113,6 +116,7 @@
             </div>
         </div>
     </div>
+    
     <footer>
         <div class="footer-divider-container">
             <div class="divider"></div>
