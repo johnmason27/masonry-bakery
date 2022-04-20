@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +14,7 @@
     <div class="home-header">
         <nav class="nav-bar">
             <a class="nav-home-link" href="./index.php">
-                <img src="./icons/home.svg" alt="Home"/>
+                <h1>O</h1>
             </a>
 
             <section class="nav-links">
@@ -70,11 +73,80 @@
             </button>
         </a>
     </div>
+    <div class="centre">
+        <div class="social-image-gallery">
+            <section class="social-caption-group">
+                <section class="social-image-gallery-actions">
+                    <a class="social-action-link" href="#">
+                        <img src="./icons/green-instagram.svg" alt="Instagram"/>
+                    </a>
+                    <a class="social-action-link" href="#">
+                        <img src="./icons/green-facebook.svg" alt="Facebook"/>
+                    </a>
+                    <a class="social-action-link" href="#">
+                        <img src="./icons/green-youtube.svg" alt="YouTube"/>
+                    </a>
+                </section>
+                <h1>SEE MORE ON OUR SOCIALS!</h1>
+            </section>
+            <div class="image-container">
+                <div class="image-container-column">
+                    <img src="./media/gallery-pulled-bread.png" alt="Pulling bread in half"/>
+                    <img src="./media/gallery-bread-in-boxes.png" alt="Bread in boxes on display"/>
+                </div>
+                <div class="image-container-column">
+                    <img src="./media/gallery-bread-on-baking-rack.png" alt="Bread cooking on baking racks"/>
+                    <img src="./media/gallery-bread-knot.png" alt="Bread knots"/>
+                </div>
+                <div class="image-container-column">
+                    <img src="./media/gallery-crossaints.png" alt="Crossaints"/>
+                    <img src="./media/gallery-kneeding.png" alt="Kneeding dough"/>
+                </div>
+                <div class="image-container-column">
+                    <img src="./media/gallery-display.png" alt="Bread on display in shop"/>
+                    <img src="./media/gallery-bread-from-oven.png" alt="Bread fresh from oven on racks"/>
+                </div>
+                <div class="image-container-column">
+                    <img src="./media/gallery-pastry-and-coffee.png" alt="Pastry's and Coffee"/>
+                    <img src="./media/gallery-employees.png" alt="Employees in shop"/>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div class="divider"></div>
+        <div class="footer-divider-container">
+            <div class="divider"></div>
+            <a class="footer-home-link" href="./index.php">
+                <h1>O</h1>
+            </a>
+        </div>
         <div class="footer-content">
-            <img src="" />
+            <section class="footer-actions">
+                <a class="footer-action-link footer-action-social-link" href="#">
+                    <img src="./icons/mail.svg" alt="Mail"/>
+                </a>
+                <a class="footer-action-link footer-action-social-link" href="#">
+                    <img src="./icons/instagram.svg" alt="Instagram"/>
+                </a>
+                <a class="footer-action-link footer-action-social-link" href="#">
+                    <img src="./icons/facebook.svg" alt="Facebook"/>
+                </a>
+                <a class="footer-action-link footer-action-social-link" href="#">
+                    <img src="./icons/youtube.svg" alt="YouTube"/>
+                </a>
+            </section>
             <h2>THE MASONRY BAKERY</h2>
+            <section class="footer-actions">
+                <a class="footer-action-link" href="#">
+                    <img src="./icons/basket.svg" alt="Basket"/>
+                </a>
+                <a class="footer-action-link" href="#">
+                    <img src="./icons/search.svg" alt="Search"/>
+                </a>
+                <a class="footer-action-link" href="#">
+                    <img src="./icons/profile.svg" alt="Profile"/>
+                </a>
+            </section>
         </div>
     </footer>
 </body>
