@@ -661,3 +661,254 @@ p {
         word-wrap: break-word;
     }
 }
+/* ------------------------------------------------------------------ */
+/* Reuseable nav */
+.reuseable-nav {
+    height: 15vh;
+    background-image: linear-gradient(
+        175deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(344deg 0% 8%) 14%,
+        hsl(344deg 0% 13%) 24%,
+        hsl(0deg 0% 18%) 32%,
+        hsl(344deg 0% 25%) 39%,
+        hsl(344deg 0% 32%) 47%,
+        hsl(0deg 0% 40%) 55%,
+        hsl(344deg 0% 59%) 66%,
+        hsl(344deg 0% 79%) 79%,
+        hsl(0deg 0% 100%) 100%
+    );
+}
+/* ----------------------------------------------------------------------- */
+
+/* Menu page */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.menu-container h3 {
+    margin: 0;
+}
+
+.menu-container p {
+    margin: 0;
+}
+
+.menu-container h1 {
+    font-size: 3rem;
+    color: #005C49;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    text-align: center;
+}
+
+.menu-items h2 {
+    font-size: 2rem;
+    color: #005C49;
+    font-family: "brandon_printedtwo";
+}
+
+.menu-items-group h3 {
+    font-size: 1rem;
+    color: #000000;
+    font-family: "brandon_printedtwo";
+}
+
+.menu-items-group p {
+    font-size: 1rem;
+    color: #000000;
+    font-family: "Nunito", Arial, Helvetica;
+}
+
+.menu-items-group .hint {
+    color: #9d9d9a;
+}
+
+.menu-items-group .italic {
+    font-style: italic;
+}
+
+.menu-items h3 {
+    font-size: 1rem;
+    color: #000000;
+    font-family: "brandon_printedtwo";
+}
+
+.menu-items p {
+    font-size: 1rem;
+    color: #000000;
+    font-family: "Nunito", Arial, Helvetica;
+}
+
+.menu-item .italic {
+    font-style: italic;
+}
+
+.menu-items-group li p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-items-sides {
+    text-align: center;
+    background-color: #c2c2c2;
+    padding: 20px;
+    margin: 30px;
+    width: 25%;
+}
+
+.allergy-warning {
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    width: 60%;
+}
+
+.allergy-warning div {
+    width: 50%;
+    padding: 15px;
+}
+
+.allergy-warning p {
+    font-size: 1rem;
+    color: #000000;
+    font-family: "Nunito", Arial, Helvetica;
+    padding: 5px;
+}
+
+.menu-items-main {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-items-drinks {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    padding: 10px 0;
+}
+
+.menu-items-group {
+    padding: 10px 0;
+}
+
+@media (max-width: 2000px) {
+    .menu-items-drinks {
+        width: 30%;
+    }
+
+    .menu-items-main {
+        width: 30%;
+    }
+
+    .menu-items-sides {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .menu-items-drinks {
+        width: 40%;
+    }
+
+    .menu-items-main {
+        width: 40%;
+    }
+
+    .menu-items-sides {
+        width: 40%;
+    }
+
+    .allergy-warning {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-items-drinks {
+        width: 50%;
+    }
+
+    .menu-items-main {
+        width: 50%;
+    }
+
+    .menu-items-sides {
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .menu-items-drinks {
+        width: 60%;
+    }
+
+    .menu-items-main {
+        width: 60%;
+    }
+
+    .menu-items-sides {
+        width: 60%;
+    }
+
+    .allergy-warning {
+        text-align: center;
+        padding: 20px;
+        margin: 30px;
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-items-drinks {
+        width: 80%;
+    }
+
+    .menu-items-main {
+        width: 80%;
+    }
+
+    .menu-items-sides {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-items-drinks {
+        width: 100%;
+    }
+
+    .menu-items-main {
+        width: 100%;
+    }
+
+    .menu-items-sides {
+        width: 100%;
+    }
+
+    .allergy-warning {
+        flex-direction: column;
+        align-items: center;
+    }
+}
