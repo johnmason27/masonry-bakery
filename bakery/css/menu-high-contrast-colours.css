@@ -1,0 +1,43 @@
+.menu-container {
+    background-color: #000000;
+}
+
+.menu-container h1 {
+    color: #005C49;
+}
+
+.menu-items h2 {
+    color: #005C49;
+}
+
+.menu-items-group h3 {
+    color: #e16e1e;
+}
+
+.menu-items-group p {
+    color: #e16e1e;
+}
+
+.menu-items-group .hint {
+    color: #ffffff;
+}
+
+.menu-items h3 {
+    color: #e16e1e;
+}
+
+.menu-items p {
+    color: #e16e1e;
+}
+
+.menu-items-sides {
+    background-color: #000000;
+}
+
+.allergy-warning p {
+    color: #e16e1e;
+}
+
+.colour-settings input {
+    color: #ffffff;
+}

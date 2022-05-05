@@ -283,13 +283,16 @@ p {
     margin-top: 5px;
 }
 
+.home-background-info-text-content a {
+    align-self: center;
+}
+
 .our-story-button {
     background-color: #005C49;
     border: 2px solid transparent;
     border-radius: 9px;
     padding: 5px 10px;
     width: fit-content;
-    align-self: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -679,6 +682,12 @@ p {
         hsl(0deg 0% 100%) 100%
     );
 }
+
+@media (max-width: 400px) {    .reuseable-nav {
+        height: 25vh;
+    }
+    
+}
 /* ----------------------------------------------------------------------- */
 
 /* Menu page */
@@ -709,7 +718,6 @@ p {
 
 .menu-container h1 {
     font-size: 3rem;
-    color: #005C49;
     font-family: "brandon_printedtwo";
     margin: 10px;
     text-align: center;
@@ -717,24 +725,17 @@ p {
 
 .menu-items h2 {
     font-size: 2rem;
-    color: #005C49;
     font-family: "brandon_printedtwo";
 }
 
 .menu-items-group h3 {
     font-size: 1rem;
-    color: #000000;
     font-family: "brandon_printedtwo";
 }
 
 .menu-items-group p {
     font-size: 1rem;
-    color: #000000;
     font-family: "Nunito", Arial, Helvetica;
-}
-
-.menu-items-group .hint {
-    color: #9d9d9a;
 }
 
 .menu-items-group .italic {
@@ -743,13 +744,11 @@ p {
 
 .menu-items h3 {
     font-size: 1rem;
-    color: #000000;
     font-family: "brandon_printedtwo";
 }
 
 .menu-items p {
     font-size: 1rem;
-    color: #000000;
     font-family: "Nunito", Arial, Helvetica;
 }
 
@@ -765,7 +764,6 @@ p {
 
 .menu-items-sides {
     text-align: center;
-    background-color: #c2c2c2;
     padding: 20px;
     margin: 30px;
     width: 25%;
@@ -786,7 +784,6 @@ p {
 
 .allergy-warning p {
     font-size: 1rem;
-    color: #000000;
     font-family: "Nunito", Arial, Helvetica;
     padding: 5px;
 }
@@ -810,6 +807,20 @@ p {
 
 .menu-items-group {
     padding: 10px 0;
+}
+
+.colour-settings {
+    display: flex;
+}
+
+.colour-settings input {
+    background: unset;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    margin: 5px;
+    min-width: 200px;
+    height: 28px;
+    font-family: "Nunito", Arial, Helvetica;
 }
 
 @media (max-width: 2000px) {
@@ -892,6 +903,11 @@ p {
     .menu-items-sides {
         width: 80%;
     }
+
+    .colour-settings {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 400px) {
@@ -910,5 +926,103 @@ p {
     .allergy-warning {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Our Story Page */
+.our-story-container-centre {
+    display: flex;
+    justify-content: center;
+}
+
+.our-story-container {
+    margin-bottom: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-story-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.our-story-container p {
+    font-size: 1rem;
+    font-family: "Nunito", Arial, Helvetica;
+}
+
+.our-story-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.our-story-section {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 15px 10px;
+}
+
+.our-story-section p {
+    padding: 5px; 
+    margin: 15px 10px;
+}
+
+.our-story-section .special-paragraph {
+    padding: 0px; 
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1600px) {
+    .our-story-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .our-story-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .our-story-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .our-story-container {
+        width: 100%;
+    }
+    
+    .our-story-container img {
+        margin-bottom: 15px;
+    }
+
+    .our-story-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 330px) {
+    .our-story-container img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 275px) {
+    .our-story-container img {
+        width: 200px;
+        height: 200px;
     }
 }
