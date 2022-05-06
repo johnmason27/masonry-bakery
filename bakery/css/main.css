@@ -1026,3 +1026,217 @@ p {
         height: 200px;
     }
 }
+
+/* Our locations page */
+.our-locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.our-locations-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    color: #005C49;
+}
+
+.our-locations-container h2 {
+    font-size: 2rem;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+.our-locations-container p {
+    font-size: 1rem;
+    font-family: "Nunito", Arial, Helvetica;
+    color: #000000;
+    text-align: center;
+}
+
+.location-container {
+    padding: 10px;
+    margin: 10px;
+}
+
+.locations {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1650px) {
+    .locations {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .location-container iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .location-container iframe {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/* Shop */
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.shop-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    color: #005C49;
+}
+
+.shop-container h2 {
+    font-size: 1.5rem;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    color: #000000;
+}
+
+.shop-container h3 {
+    font-size: 1rem;
+    font-family: "brandon_printedtwo";
+    margin: 10px;
+    color: #000000;
+}
+
+.shop-item {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Nunito", Arial, Helvetica;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.shop-item .title {
+    color: #000000;
+}
+
+.shop-item .description {
+    color: #6e6e6e;
+}
+
+.shop-item .price {
+    color: #000000;
+}
+
+.shop-item .alert {
+    color: #e4931b;
+}
+
+.shop-item img {
+    width: 300px;
+    height: 300px;
+}
+
+.shop-item-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.shop-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .shop-item {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 330px) {
+    .shop-item img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.shop-filters {
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+}
+
+.search-bar-form {
+    display: flex;
+    margin: 10px;
+}
+
+.search-bar-form input {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    height: 36px;
+    margin-right: 5px;
+}
+
+.shop-filter-search-button {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+}
+
+.shop-filter-search-button:hover, .shop-filter-search-button:active {
+    border: 1px solid #000000;
+}
+
+.shop-filter-search-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.filters-form {
+    margin: 10px;
+}
+
+.shop-filters input[type=submit] {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    width: 60px;
+    height: 36px;
+    padding: 4px;
+}
+
+.sort-by-form {
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    .shop-filters {
+        flex-direction: column;
+    }
+}

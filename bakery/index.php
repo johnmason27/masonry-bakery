@@ -33,7 +33,7 @@
 <div class="divider"></div>
 
 <div class="have-a-nosey-container">
-    <a href="#">
+    <a href="shop.php">
         <button class="have-a-nosey-button">
             <h2>HAVE A NOSEY...</h2>
         </button>
@@ -44,13 +44,13 @@
     <div class="social-image-gallery">
         <section class="social-caption-group">
             <section class="social-image-gallery-actions">
-                <a class="social-action-link" href="#">
+                <a class="social-action-link" href="https://instagram.com">
                     <img src="icons/green-instagram.svg" alt="Instagram"/>
                 </a>
-                <a class="social-action-link" href="#">
+                <a class="social-action-link" href="https://facebook.com">
                     <img src="icons/green-facebook.svg" alt="Facebook"/>
                 </a>
-                <a class="social-action-link" href="#">
+                <a class="social-action-link" href="https://youtube.com">
                     <img src="icons/green-youtube.svg" alt="YouTube"/>
                 </a>
             </section>
