@@ -1,7 +1,7 @@
 <?php 
+    include "includes/head.inc.php";
+    include "includes/navbar-wrapper.inc.php";
     require "includes/dbh.inc.php";
-    include"includes/head.inc.php";
-    include"includes/navbar-wrapper.inc.php";
 
     $styleSheet = "menu-default-colours";
 
@@ -563,5 +563,5 @@
     </section>
 </div>
 <?php 
-    include"includes/foot.inc.php"
+    include "includes/foot.inc.php"
 ?>

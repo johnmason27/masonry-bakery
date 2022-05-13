@@ -25,10 +25,7 @@
             <a class="footer-action-link" href="basket.php">
                 <img src="icons/basket.svg" alt="Basket"/>
             </a>
-            <a class="footer-action-link" href="#">
-                <img src="icons/search.svg" alt="Search"/>
-            </a>
-            <a class="footer-action-link" href="#">
+            <a class="footer-action-link" href="profile.php">
                 <img src="icons/profile.svg" alt="Profile"/>
             </a>
         </section>

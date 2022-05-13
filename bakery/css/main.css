@@ -305,7 +305,7 @@ p {
 
 .our-story-button:focus, .our-story-button:hover {
     border: 2px solid #000000;
-    border-radius: 3px;
+    border-radius: 9px;
 }
 
 /* Home background info content Responsive Styling */
@@ -1239,4 +1239,213 @@ p {
     .shop-filters {
         flex-direction: column;
     }
+}
+
+/* Shop item view */
+.shop-item-view {
+    min-height: 40%;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.shop-item-view h1 {
+    font-size: 2rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+}
+
+.shop-item-view p {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+}
+
+.shop-item-view .warning {
+    color: #e4931b;
+}
+
+.shop-item-view .feedback {
+    color: #e1341e;
+}
+
+.shop-item-view label {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+}
+
+.shop-item-view img {
+    width: 400px;
+    height: 400px;
+}
+
+.shop-item-view input {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    height: 36px;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.shop-item-view button {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 9px;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shop-item-view button p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.shop-item-view button:focus, .shop-item-view button:hover {
+    border: 2px solid #000000;
+    border-radius: 3px;
+    border-radius: 9px;
+}
+
+@media (max-width: 450px) {
+    .shop-item-view img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 280px) {
+    .shop-item-view img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Basket */
+.basket-items {
+    margin-bottom: 100px;
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket-item {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.basket-item img {
+    width: 300px;
+    height: 300px;
+}
+
+.basket-items h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+@media (max-width: 330px) {
+    .basket-item img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.basket-item input {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    height: 36px;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.basket-item .item-title {
+    color: #000000;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.basket-item .item-price {
+    color: #6e6e6e;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.basket-item .item-stock-levels {
+    color: #e4931b;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.basket-empty {
+    text-align: center;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    margin: 15px;
+}
+
+.basket-empty a {
+    color: #e1341e;
+}
+
+.basket-remove-item-button {
+    background-color: #e1341e;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 7.5px;
+    height: 38px;
+}
+
+.basket-remove-item-button p {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.basket-complete-order-button {
+    background-color: #005C49;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 7.5px;
+}
+
+.basket-complete-order-button h2 {
+    font-size: 2rem;
+    font-family: "brandon_printedtwo";
+    color: #ffffff;
+    margin-left: 5px;
+    margin-right: 11px;
+}
+
+.basket-clear-all-button {
+    background-color: #e1341e;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 7.5px;
+    height: 38px;
+    margin: 10px;
+}
+
+.basket-clear-all-button p {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.basket-clear-all-button:focus, .basket-clear-all-button:hover {
+    border: 2px solid #000000;
+    border-radius: 9px;
 }

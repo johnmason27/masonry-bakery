@@ -1,6 +1,6 @@
 <?php 
-    include"includes/head.inc.php";
-    include"includes/navbar-wrapper.inc.php";
+    include "includes/head.inc.php";
+    include "includes/navbar-wrapper.inc.php";
 ?>
 <div class="our-locations-container">
     <h1>OUR LOCATIONS</h1>
@@ -44,5 +44,5 @@
     </div>
 </div>
 <?php 
-    include"includes/foot.inc.php"
+    include "includes/foot.inc.php"
 ?>

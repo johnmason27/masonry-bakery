@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if (!isset($_SESSION["basket"])) {
+        $_SESSION["basket"] = array();
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

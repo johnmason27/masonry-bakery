@@ -1,6 +1,6 @@
 <?php 
-    include"includes/head.inc.php";
-    include"includes/navbar-wrapper.inc.php";
+    include "includes/head.inc.php";
+    include "includes/navbar-wrapper.inc.php";
 ?> 
 <div class="our-story-container-centre">
     <div class="our-story-container">
@@ -74,5 +74,5 @@
     </div>
 </div>
 <?php 
-    include"includes/foot.inc.php"
+    include "includes/foot.inc.php"
 ?>

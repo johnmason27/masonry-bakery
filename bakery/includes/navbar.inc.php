@@ -5,7 +5,7 @@
     <section class="nav-links">
         <ul>
             <li>
-                <a href="ourstory.php">OUR STORY</a>
+                <a href="our-story.php">OUR STORY</a>
             </li>
             <li>
                 <a href="shop.php">SHOP</a>
@@ -22,10 +22,7 @@
         <a class="nav-action-link" href="basket.php">
             <img src="icons/basket.svg" alt="Basket"/>
         </a>
-        <a class="nav-action-link" href="#">
-            <img src="icons/search.svg" alt="Search"/>
-        </a>
-        <a class="nav-action-link" href="#">
+        <a class="nav-action-link" href="profile.php">
             <img src="icons/profile.svg" alt="Profile"/>
         </a>
     </section>
