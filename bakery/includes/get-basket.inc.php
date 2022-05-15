@@ -34,6 +34,7 @@ $num_records = mysqli_num_rows($response);
 if ($num_records == 0) {
     echo "<p>No items in database</p>";
 } else {
+    $totalPrice = 0;
     echo "<h1>Basket</h1>";
     echo "<button class='basket-clear-all-button' onclick='clearBasket()'><p>Clear basket</p></button>";
     while ($row = mysqli_fetch_assoc($response)) {                
@@ -42,6 +43,8 @@ if ($num_records == 0) {
                 $quantity = $basketItems[$i]->quantity;
             }
         }
+        $itemPrice = $row["price"] * $quantity;
+        $totalPrice += $itemPrice;
         echo "<div class='basket-item' id='item-".$row["id"]."'>
             <img src='".$row["imgUrl"]."' alt='".$row["title"]."'/>
             <div>
@@ -54,6 +57,7 @@ if ($num_records == 0) {
             </div>
         </div>";
     }
+    echo "<p class='basket-total'>Total: £".$totalPrice."</p>";
     if (count($basketItems) !== 0) {
         echo "<a href='complete-order.php'><button class='basket-complete-order-button'><h2>Order</h2></button></a>";
     }

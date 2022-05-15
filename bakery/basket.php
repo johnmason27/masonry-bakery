@@ -46,8 +46,15 @@
         }
     }
 </script>
-<div class="basket-items">
-</div>
+<?php 
+    if (isset($_GET["success"])) {
+        if ($_GET["success"] === "completedorder") {
+            echo "<p class='basket-order-completed'>Order completed</p>";
+        }
+    } else {
+        echo "<div class='basket-items'></div>";
+    }
+?>
 <?php 
     include "includes/foot.inc.php";
 ?>

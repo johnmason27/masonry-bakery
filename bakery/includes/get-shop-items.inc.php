@@ -51,7 +51,7 @@ if ($num_records == 0) {
     print("<p>No shop items in the database sorry...</p>");
 } else {
     while ($row = mysqli_fetch_assoc($response)) {         
-        if ($row["stock"] !== 0) {       
+        if ($row["stock"] > 0) {       
             $isLowStock = false;
             $isPopular = false;
 

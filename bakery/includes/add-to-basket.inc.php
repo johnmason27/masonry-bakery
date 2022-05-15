@@ -1,5 +1,6 @@
 <?php
 session_start();
+require "dbh.inc.php";
 
 if (!isset($_POST["id"]) || !isset($_POST["quantity"])) {
     echo "fail";
@@ -22,7 +23,26 @@ if ($isEmpty) {
     for ($i = 0; $i < $sessionLength; $i++) {
         if ($item->id == $_SESSION["basket"][$i]->id) {
             $notFound = false;
-            $_SESSION["basket"][$i]->quantity += $item->quantity;
+            $sql = "SELECT stock FROM shop WHERE id = ?";
+            $stmt = mysqli_stmt_init($conn);
+
+            if (!mysqli_stmt_prepare($stmt, $sql)) {
+                exit();
+            } else {
+                mysqli_stmt_bind_param($stmt, "i", $item->id);
+                mysqli_stmt_execute($stmt);
+                $response = mysqli_stmt_get_result($stmt);
+
+                if ($row = mysqli_fetch_assoc($response)) {
+                    if ($row["stock"] >= $_SESSION["basket"][$i]->quantity) {
+                        $_SESSION["basket"][$i]->quantity = $row["stock"];
+                    } else {
+                        $_SESSION["basket"][$i]->quantity += $item->quantity;
+                    }
+                }
+            }
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
         }
     }
     
