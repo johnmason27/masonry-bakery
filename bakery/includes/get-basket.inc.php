@@ -52,7 +52,7 @@ if ($num_records == 0) {
                 <p class='item-price'>£".$row["price"]."</p>
                 <p class='item-stock-levels'>Stock levels: ".$row["stock"]."</p>
                 <label for='item-quantity'>Quantity:</label>
-                <input id='item-quantity' type='number' min='0' max='".$row["stock"]."' value='".$quantity."' oninput='validity.valid||(value=``)'>
+                <input id='item-quantity' type='number' min='0' max='".$row["stock"]."' value='".$quantity."' oninput='validity.valid||(value=``); updateQuantity(".$id.")'>
                 <button class='basket-remove-item-button' onclick='removeItem(".$row["id"].")'><p>Remove</p></button>
             </div>
         </div>";

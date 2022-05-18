@@ -109,7 +109,7 @@
                 <input type="checkbox" id="white" value="white"/>
                 <label for="white">White flour products</label><br>
                 <input type="checkbox" id="cookies" value="cookies"/>
-                <label for="oldecookiesst">Cookies</label><br>
+                <label for="cookies">Cookies</label><br>
                 <input type="checkbox" id="savoury" value="savoury"/>
                 <label for="savoury">Savoury</label><br>
                 <input type="checkbox" id="sweet" value="sweet"/>

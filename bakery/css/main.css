@@ -1584,3 +1584,537 @@ p {
         min-width: 200px;
     }
 }
+
+/* Profile */
+.profile-container {
+    height: 40%;
+    margin-bottom: 100px;
+}
+
+.profile-logged-out-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-logged-out-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.profile-logged-out-container a {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e4931b;
+    margin: 10px;
+}
+
+.profile-logged-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-logged-in-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.profile-logged-in-container input[type=submit] {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 7.5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.profile-logged-in-container a {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e4931b;
+    margin: 10px;
+}
+
+/* Login */
+.login-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.login-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.login-container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container input[type=text], .login-container input[type=password] {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.login-container input[type=submit] {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 7.5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.login-container input[type=submit]:hover, .login-container input[type=submit]:active {
+    border: 2px solid #000000;
+}
+
+@media (max-width: 450px) {
+    .login-container input[type=text], .login-container input[type=password] {
+        width: 200px;
+    }
+}
+
+.signup-link {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e4931b;
+}
+
+.login-error {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e1341e;
+    margin: 10px;
+}
+
+/* Signup */
+.signup-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.signup-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.signup-container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-container input[type=text], .signup-container input[type=password] {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.signup-container input[type=submit] {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 7.5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.signup-container input[type=submit]:hover, .signup-container input[type=submit]:active {
+    border: 2px solid #000000;
+}
+
+@media (max-width: 450px) {
+    .signup-container input[type=text], .signup-container input[type=password] {
+        width: 200px;
+    }
+}
+
+.signup-error, .signup-success {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e1341e;
+    margin: 10px;
+}
+
+/* View orders */
+.view-orders-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.view-orders-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+#orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orders-table {
+    width: 90%;
+    margin: 5px;
+}
+
+.orders-table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.orders-table th {
+    font-size: 1rem;
+    font-family: "brandon_printedtwo";
+    margin: 5px;
+    text-align: left;
+}
+
+.orders-table td {
+    font-size: 1rem;
+    font-family: "Nunito", Arial, Helvetica;
+    vertical-align: text-top;
+}
+
+.order-id {
+    width: 10%;
+}
+
+.order-email {
+    width: 30%;
+}
+
+.order-receipt {
+    width: 60%;
+}
+
+/* View/Edit stock */
+.view-edit-stock-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.view-edit-stock-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+#stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stock-table {
+    width: 95%;
+    margin: 5px;
+}
+
+.stock-table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.stock-table th {
+    font-size: 1rem;
+    font-family: "brandon_printedtwo";
+    margin: 5px;
+    text-align: left;
+}
+
+.stock-table td {
+    font-size: 1rem;
+    font-family: "Nunito", Arial, Helvetica;
+    vertical-align: text-top;
+}
+
+.stock-id {
+    width: 5%;
+    padding: 5px;
+}
+
+.stock-title {
+    width: 25%;
+    padding: 5px;
+}
+
+.stock-description {
+    width: 35%;
+    padding: 5px;
+}
+
+.stock-price {
+    width: 5%;
+    padding: 5px;
+}
+
+.stock-added {
+    width: 10%;
+    padding: 5px;
+}
+
+.stock-stock {
+    width: 5%;
+    padding: 5px;
+}
+
+.stock-sold {
+    width: 5%;
+    padding: 5px;
+}
+
+.stock-options {
+    width: 10%;
+    padding: 5px;
+}
+
+.stock-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stock-edit-button {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+}
+
+.stock-remove-button {
+    background-color: #e1341e;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+}
+
+.stock-add-button {
+    background-color: #e4931b;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 5px;
+    width: 150px;
+    margin: 5px;
+}
+
+.stock-edit-button:hover, .stock-edit-button:active, .stock-add-button:hover, .stock-add-button:active, .stock-remove-button:hover, .stock-remove-button:active {
+    border: 2px solid #000000;
+}
+
+.view-edit-stock-message {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e1341e;
+    margin: 10px;
+}
+
+/* Edit stock container */
+.edit-stock-item-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.edit-stock-item-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.edit-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-stock-item-form-error {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e1341e;
+    margin: 10px;
+}
+
+.edit-stock-item-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.edit-stock-item-form label {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+}
+
+.edit-stock-item-form input[type=text], .edit-stock-item-form input[type=url], .edit-stock-item-form input[type=number] {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.edit-stock-item-form input[type=submit] {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 7.5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.edit-stock-item-form input[type=submit]:hover, .edit-stock-item-form input[type=submit]:active {
+    border: 2px solid #000000;
+}
+
+@media (max-width: 450px) {
+    .edit-stock-item-form input[type=text], .edit-stock-item-form input[type=url], .edit-stock-item-form input[type=number] {
+        width: 200px;
+    }
+}
+
+/* Add item */
+.add-stock-item-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-height: 40%;
+}
+
+.add-stock-item-container h1 {
+    font-size: 3rem;
+    font-family: "brandon_printedtwo";
+    color: #005C49;
+    margin: 15px 10px;
+}
+
+.add-stock-item-form-error {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    color: #e1341e;
+    margin: 10px;
+}
+
+.add-stock-item-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-stock-item-form label {
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+}
+
+.add-stock-item-form input[type=text], .add-stock-item-form input[type=url], .add-stock-item-form input[type=number] {
+    background-color: transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1rem;
+    padding: 7.5px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.add-stock-item-form input[type=submit] {
+    background-color: #005C49;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Nunito", Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    padding: 7.5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.add-stock-item-form input[type=submit]:hover, .add-stock-item-form input[type=submit]:active {
+    border: 2px solid #000000;
+}
+
+@media (max-width: 450px) {
+    .add-stock-item-form input[type=text], .add-stock-item-form input[type=url], .add-stock-item-form input[type=number] {
+        width: 200px;
+    }
+}
+

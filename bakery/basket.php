@@ -45,6 +45,16 @@
             </div>`);
         }
     }
+
+    function updateQuantity(id) {
+        const quantity = $("#item-quantity").val();
+
+        $.ajax({
+            method: "POST",
+            url: "includes/update-basket-item-quantity.inc.php",
+            data: { id: id, quantity: quantity }
+        });
+    }
 </script>
 <?php 
     if (isset($_GET["success"])) {
