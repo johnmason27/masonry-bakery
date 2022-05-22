@@ -36,7 +36,7 @@ if ($num_records == 0) {
 } else {
     $totalPrice = 0;
     echo "<h1>Basket</h1>";
-    echo "<button class='basket-clear-all-button' onclick='clearBasket()'><p>Clear basket</p></button>";
+    echo "<button class='basket-clear-all-button' onclick='clearBasket()'>Clear basket</button>";
     while ($row = mysqli_fetch_assoc($response)) {                
         for ($i = 0; $i < count($basketItems); $i++) {
             if ($basketItems[$i]->id === $row["id"]) {
@@ -53,12 +53,12 @@ if ($num_records == 0) {
                 <p class='item-stock-levels'>Stock levels: ".$row["stock"]."</p>
                 <label for='item-quantity'>Quantity:</label>
                 <input id='item-quantity' type='number' min='0' max='".$row["stock"]."' value='".$quantity."' oninput='validity.valid||(value=``); updateQuantity(".$id.")'>
-                <button class='basket-remove-item-button' onclick='removeItem(".$row["id"].")'><p>Remove</p></button>
+                <button class='basket-remove-item-button' onclick='removeItem(".$row["id"].")'>Remove</button>
             </div>
         </div>";
     }
     echo "<p class='basket-total'>Total: £".$totalPrice."</p>";
     if (count($basketItems) !== 0) {
-        echo "<a href='complete-order.php'><button class='basket-complete-order-button'><h2>Order</h2></button></a>";
+        echo "<a class='basket-complete-order-button' href='complete-order.php'>Order</a>";
     }
 }

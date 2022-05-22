@@ -1,8 +1,8 @@
 <nav class="nav-bar">
     <a class="nav-home-link" href="index.php">
-        <h1>O</h1>
+        <p>O</p>
     </a>
-    <section class="nav-links">
+    <div class="nav-links">
         <ul>
             <li>
                 <a href="our-story.php">OUR STORY</a>
@@ -17,13 +17,13 @@
                 <a href="locations.php">LOCATIONS</a>
             </li>
         </ul>
-    </section>
-    <section class="nav-actions">
+    </div>
+    <div class="nav-actions">
         <a class="nav-action-link" href="basket.php">
             <img src="icons/basket.svg" alt="Basket"/>
         </a>
         <a class="nav-action-link" href="profile.php">
             <img src="icons/profile.svg" alt="Profile"/>
         </a>
-    </section>
+    </div>
 </nav>

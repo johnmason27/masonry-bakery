@@ -43,7 +43,7 @@ if ($num_records == 0) {
             <td class='stock-sold'>".$row["sold"]."</td>
             <td class='stock-options'>
                 <div class='stock-options-container'>
-                    <a href='edit-stock-item.php?id=".$row["id"]."'><button class='stock-edit-button'>Edit</button></a>
+                    <a class='stock-edit-button' href='edit-stock-item.php?id=".$row["id"]."'>Edit</a>
                     <button class='stock-remove-button' onclick='removeStockItem(".$row["id"].")'>Remove</button>
                 </div>
             </td>

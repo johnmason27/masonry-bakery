@@ -16,7 +16,16 @@ if (isset($_GET["id"])) {
         $response = mysqli_stmt_get_result($stmt);
 
         if ($row = mysqli_fetch_assoc($response)) {
-            echo json_encode($row);
+            echo "<h1 id='shop-item-title'>".$row["title"]."</h1>
+                <p id='shop-item-description'>".$row["description"]."</p>
+                <p id='shop-item-price'>£".$row["price"]."</p>
+                <form class='shop-item-form'>
+                    <p id='stock-count'>".$row["stock"]."</p>
+                    <label for='item-quantity'>Quantity:</label>
+                    <input id='item-quantity' type='number' min='0' oninput='validity.valid||(value=``)'>
+                    <button onclick='addToBasket()'>Add to basket</button>
+                </form>
+                <img id='shop-item-img' src=".$row["imgUrl"]." alt='".$row["title"]."'/>";
         }
     }
     mysqli_stmt_close($stmt);

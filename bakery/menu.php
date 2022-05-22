@@ -22,7 +22,7 @@
         <input type="submit" name="changeStyle" value="menu-default-colours"><br>
         <input type="submit" name="changeStyle" value="menu-high-contrast-colours"><br>
     </form>
-    <section class="menu-items menu-items-drinks">
+    <div class="menu-items menu-items-drinks">
         <h2>DRINKS</h2>
         <div class="menu-items-group">
             <h3>IRON & FIRE COFFEE</h3>
@@ -52,7 +52,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -84,7 +84,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -116,7 +116,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -148,7 +148,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -180,7 +180,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -212,7 +212,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -244,7 +244,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -276,7 +276,7 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
@@ -308,12 +308,12 @@
                         }
                         echo"</li>";
                     }
-                    echo"</ul";
+                    echo"</ul>";
                 }
             ?>
         </div>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>BRIOCHE & BENEDICTS</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'BriocheAndBenedicts'";
@@ -346,8 +346,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>SOURDOUGH TOAST</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'SourdoughToast'";
@@ -380,8 +380,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>SWEET</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'Sweet'";
@@ -414,8 +414,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>BRUNCH</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'Brunch'";
@@ -448,8 +448,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>LUNCH</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'Lunch'";
@@ -482,8 +482,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-main">
+    </div>
+    <div class="menu-items menu-items-main">
         <h2>GRILLED SOURDOUGH SANDWICHES</h2>
         <?php 
             $sql = "SELECT title, description, hint, category, price FROM main_menu WHERE category = 'GrilledSourdoughSandwiches'";
@@ -516,8 +516,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="menu-items menu-items-sides">
+    </div>
+    <div class="menu-items menu-items-sides">
         <h2>SIDES + ADD ONS</h2>
         <?php 
             $sql = "SELECT title, price FROM sides_menu";
@@ -545,8 +545,8 @@
                 echo"</ul>";
             }
         ?>
-    </section>
-    <section class="allergy-warning">
+    </div>
+    <div class="allergy-warning">
         <div>
             <p>
                 * please ask your server for dairy free butters
@@ -560,7 +560,7 @@
                 Please inform us of any allergies or intolerances you have have before ordering - all our food is prepared in a bakery & we cannot guarantee ther has been no contact with wheat or nuts.
             </p>
         </div>
-    </section>
+    </div>
 </div>
 <?php 
     include "includes/foot.inc.php"

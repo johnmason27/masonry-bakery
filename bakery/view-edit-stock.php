@@ -26,26 +26,27 @@
             data: { id: id }
         });
 
-        $(".view-edit-stock-message").text("Removed stock item!");
+        $(".stock-container-header").append("<p class='view-edit-stock-message'>Removed stock item!</p>");
     }
 </script>
 <div class="view-edit-stock-container">
-    <h1>View/Edit Stock</h1>
-    <?php
-        if (isset($_GET["success"])) {
-            if ($_GET["success"] === "edit") {
-                echo "<p class='view-edit-stock-message'>Stock item edited!</p>";
-            } else if ($_GET["success"] === "added") {
-                echo "<p class='view-edit-stock-message'>Stock item added!</p>";
+    <div class="stock-container-header">
+        <h1>View/Edit Stock</h1>
+        <?php
+            if (isset($_GET["success"])) {
+                if ($_GET["success"] === "edit") {
+                    echo "<p class='view-edit-stock-message'>Stock item edited!</p>";
+                } else if ($_GET["success"] === "added") {
+                    echo "<p class='view-edit-stock-message'>Stock item added!</p>";
+                }
+            } else if (isset($_GET["error"])) {
+                if ($_GET["error"]) {
+                    echo "<p class='view-edit-stock-message'>Error performing action!</p>";
+                }
             }
-        } else if (isset($_GET["error"])) {
-            if ($_GET["error"]) {
-                echo "<p class='view-edit-stock-message'>Error performing action!</p>";
-            }
-        }
-    ?>
-    <p class="view-edit-stock-message"></p>
-    <a href="add-stock-item.php"><button class="stock-add-button">Add stock</button></a>
+        ?>
+        <a class="stock-edit-button" href="add-stock-item.php">Add stock</a>
+    </div>
     <div id="stock"></div>
 </div>
 <?php

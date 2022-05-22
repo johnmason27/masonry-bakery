@@ -20,10 +20,8 @@
             <h1>THE MASONRY BAKERY</h1>
             <h2>BASED IN SHROPSHIRE, ENGLAND</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="our-story.php">
-                <button class="our-story-button">
-                    <h2>OUR STORY</h2>
-                </button>
+            <a class="our-story-button" href="our-story.php">
+                OUR STORY
             </a>
         </div>
     </div>
@@ -32,17 +30,15 @@
 <div class="divider"></div>
 
 <div class="have-a-nosey-container">
-    <a href="shop.php">
-        <button class="have-a-nosey-button">
-            <h2>HAVE A NOSEY...</h2>
-        </button>
+    <a class="have-a-nosey-button" href="shop.php">
+        HAVE A NOSEY...
     </a>
 </div>
 
 <div class="centre">
     <div class="social-image-gallery">
-        <section class="social-caption-group">
-            <section class="social-image-gallery-actions">
+        <div class="social-caption-group">
+            <div class="social-image-gallery-actions">
                 <a class="social-action-link" href="https://instagram.com">
                     <img src="icons/green-instagram.svg" alt="Instagram"/>
                 </a>
@@ -52,9 +48,9 @@
                 <a class="social-action-link" href="https://youtube.com">
                     <img src="icons/green-youtube.svg" alt="YouTube"/>
                 </a>
-            </section>
-            <h1>SEE MORE ON OUR SOCIALS!</h1>
-        </section>
+            </div>
+            <h2>SEE MORE ON OUR SOCIALS!</h2>
+        </div>
         <div class="image-container">
             <div class="image-container-column">
                 <img src="media/gallery-pulled-bread.png" alt="Pulling bread in half"/>

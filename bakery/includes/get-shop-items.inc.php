@@ -65,7 +65,7 @@ if ($num_records == 0) {
             
             echo "
                 <a class='shop-item' href='shop-item.php?id=".$row["id"]."'>
-                    <img src=".$row["imgUrl"]." alt=".$row["title"]." />
+                    <img src=".$row["imgUrl"]." alt='".$row["title"]."' />
                     <div class='shop-item-text'>";
             if ($isPopular) {
                 echo "<p class='alert'>Best Seller</p>";
