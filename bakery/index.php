@@ -19,7 +19,7 @@
         <div class="home-background-info-text-content">
             <h1>THE MASONRY BAKERY</h1>
             <h2>BASED IN SHROPSHIRE, ENGLAND</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>We freshly bake baked goods fresh to order including breads, cookies, bagels and much more. We have a 100% happy guarantee so if you aren't happy with your product we will give you a refund no questions asked. But we ensure that everything that leaves our bakery meets our high standards.</p>
             <a class="our-story-button" href="our-story.php">
                 OUR STORY
             </a>

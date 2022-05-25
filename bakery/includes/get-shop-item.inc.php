@@ -20,7 +20,7 @@ if (isset($_GET["id"])) {
                 <p id='shop-item-description'>".$row["description"]."</p>
                 <p id='shop-item-price'>£".$row["price"]."</p>
                 <form class='shop-item-form'>
-                    <p id='stock-count'>".$row["stock"]."</p>
+                    <p id='stock-count'>Stock: ".$row["stock"]."</p>
                     <label for='item-quantity'>Quantity:</label>
                     <input id='item-quantity' type='number' min='0' oninput='validity.valid||(value=``)'>
                     <button onclick='addToBasket()'>Add to basket</button>
